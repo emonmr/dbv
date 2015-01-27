@@ -1,0 +1,1 @@
+ALTER TABLE `products` CHANGE `price` `prices` DECIMAL(8,2) NOT NULL COMMENT 'price of that product';
