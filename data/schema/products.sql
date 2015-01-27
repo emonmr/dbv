@@ -11,6 +11,7 @@ CREATE TABLE `products` (
   `order_count` int(5) NOT NULL DEFAULT '0',
   `created` datetime NOT NULL,
   `modified` datetime NOT NULL,
+  `test` varchar(112) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `company_id` (`company_id`),
   CONSTRAINT `products_ibfk_1` FOREIGN KEY (`company_id`) REFERENCES `companies` (`id`) ON DELETE CASCADE ON UPDATE NO ACTION
